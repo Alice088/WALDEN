@@ -1,9 +1,15 @@
 import React from "react";
+import SliderOfImage from "./components/SliderOfImage";
+import arrayPhoto from "./arrayPhotoOne.js";
 
  export default function App() {
   return (
-    <div>
+    <div className="font-roboto">
 
+      <main >
+        <SliderOfImage head={`Writings by the Walden TeamWritings by the Walden Team`} arrPhoto={arrayPhoto}/>
+      </main>
+      
 
       <footer>
         <div className="flex flex-col mb-14 items-center gap-y-3 text-neutral-400">
@@ -15,7 +21,7 @@ import React from "react";
           </form>
         </div>
 
-        <div className="flex justify-around text-neutral-400">
+        <div className="flex justify-around text-neutral-400 m-3">
           <p>© 2021 Walden</p>
 
           <p>FAQ</p>
@@ -30,7 +36,7 @@ import React from "react";
         </div>
 
         <div className="flex h-16 flex-col justify-center bg-neutral-100">
-          <p className=" text-zinc-700 text-center font-roboto">
+          <p className=" text-zinc-700 text-center">
             Free Shipping Over $100, Returns, and a One-Year Warranty
           </p>
         </div>
