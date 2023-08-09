@@ -16,7 +16,7 @@ export default function SliderOfImage({head, arrPhoto}) {
         fixedHeight: `600px`,
         fixedWidth: `450px`,
         drag: `free`,
-        speed: 5000
+        speed: 900
       }}>
         {arrPhoto.map(item => {
           return <SplideSlide key={item.id}>
