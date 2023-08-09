@@ -35,14 +35,13 @@ $colro-black-grey: #757575;
     width: 420px;
   }
 
-  .Cards {
+  .Conteiner__Cards {
 
-    .Card {
+    .Container__Card--minimalism {
       display: flex;
       flex-direction: column;
+      row-gap: 10px;
       align-items: center;
-      margin-left: 18px;
-      margin-right: 18px;
       text-align: center;
 
       p {

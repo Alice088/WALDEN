@@ -27,15 +27,14 @@
   height: 500px;
   width: 420px;
 }
-.Container .Cards .Card {
+.Container .Conteiner__Cards .Container__Card--minimalism {
   display: flex;
   flex-direction: column;
+  row-gap: 10px;
   align-items: center;
-  margin-left: 18px;
-  margin-right: 18px;
   text-align: center;
 }
-.Container .Cards .Card p {
+.Container .Conteiner__Cards .Container__Card--minimalism p {
   color: #757575;
   font-family: Roboto;
   font-size: 14px;
