@@ -1,4 +1,4 @@
-const imagesSLiderThree = [
+const arrayImageOfSliderFooter = [
   {
   id: 1,
   src: `images/img-1.png`,
@@ -35,4 +35,4 @@ const imagesSLiderThree = [
   },
 ]
 
-export default imagesSLiderThree;
+export default arrayImageOfSliderFooter;
