@@ -11,6 +11,19 @@
 $color-grey: #8C8C8C;
 $colro-black-grey: #757575;
 
+body {
+  a {
+    transition: 150ms ease-in-out;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .Container {
   display: flex;
