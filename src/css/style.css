@@ -12,20 +12,19 @@
   margin-bottom: 70px;
   margin-top: 169px;
 }
-.Container h4 {
-  color: #8C8C8C;
-  font-family: Roboto;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28.8px;
-  align-self: flex-start;
-  margin: 50px;
-  margin-top: 0;
-}
 .Container img {
   height: 500px;
   width: 420px;
+}
+.Container h4 {
+  color: #757575;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36.4px;
+  margin-bottom: 50px;
 }
 .Container .Conteiner__Cards .Container__Card--minimalism {
   display: flex;

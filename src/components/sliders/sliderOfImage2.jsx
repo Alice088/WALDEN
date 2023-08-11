@@ -5,7 +5,7 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 
-export default function SliderOfImage2({ head, arrPhoto}) {
+export default function SliderOfImage2({head, arrPhoto}) {
   return (
     <div className="Container">
       <h4>{head}</h4>
@@ -31,7 +31,7 @@ export default function SliderOfImage2({ head, arrPhoto}) {
           {arrPhoto.map((item) => {
             return (
               <SplideSlide key={item.id}>
-                <TemplateCardForSlider2 text={item.text} alt={item.alt} img={item.src}/>
+                <TemplateCardForSlider2 text={item.text} alt={item.alt} img={item.src} />
               </SplideSlide>
             );
           })}

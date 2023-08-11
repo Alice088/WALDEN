@@ -5,7 +5,7 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 
-export default function SliderOfImage1({ head, arrPhoto}) {
+export default function SliderOfImage1({head, arrPhoto}) {
   return (
     <div className="Container">
       <h4>{head}</h4>

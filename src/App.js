@@ -1,16 +1,17 @@
 import React from "react";
 import SliderOfImage1 from "./components/sliders/SliderOfImage1";
 import SliderOfImage2 from "./components/sliders/sliderOfImage2";
-import ArrayImageOfSliderFooter from "./arrayImageOfSliderFooter.js";
+import arrayImageOfSliderTop from "./arrayImageOfSliderTop";
 import arrayImageOfSliderMiddle from "./arrayImageOfSliderMiddle"
+import arrayImageOfSliderFooter from "./arrayImageOfSliderFooter.js";
 import LogosOtherCompanys from "./components/LogosOtherCompanys";
 
 export default function App() {
   return (
     <div className="font-roboto">
 
-      <header>
-        {/* дать ему граунд и нормально настроить хедер  */}
+      <header className="h-[762px]"
+        style={{backgroundImage: `url(images/header-img.jpeg)`}}>
         <nav>
           <img src="images/icons/Logo-app.png" alt="Walden-icon" />
 
@@ -22,20 +23,24 @@ export default function App() {
             {/* потом каждому линку дать ссылку на айди для прокрутки!!!  */}
             {/* в том смысле когда артикли буду, сейчас пока не надо */}
 
-            <img src="images/icons/circle-nav-icon" alt="circle" />
+            <img src="images/icons/circle-nav-icon.svg" alt="circle" />
           </div>
         </nav>
       </header>
  
       <main>
+        <article>
+          <SliderOfImage1
+          head={`We believe everyone needs a space to be present, explore the mind, and find stillness. Walden designs and engineers tools for meditation.`} arrPhoto={arrayImageOfSliderTop}/>
+        </article>
 
       <article className="flex flex-col pl-8 pr-8">
           <div className=" h-[1000px] pt-16 bg-cover bg-center bg-no-repeat grid grid-rows-2"
             style={{ backgroundImage: `url(images/gong.png)` }}>
 
             <span className="text-white grid row-start-1 gap-5 row-end-2 justify-self-center self-start">
-              <h2 className=" text-5xl self-center row-start-1">The Gong</h2>
-              <p className=" text-center">Space for the self.</p>
+              <h2 className=" text-4xl text-center row-start-1">The Gong</h2>
+              <p className=" text-center">An analogue meditation timer</p>
             </span>
 
             <button className="text-white justify-self-center self-end m-12 p-3
@@ -47,9 +52,7 @@ export default function App() {
         </article>
 
         <article>
-          <SliderOfImage2
-            head={`What Makes Our Original Cushions Special`}
-            arrPhoto={arrayImageOfSliderMiddle}/>
+          <SliderOfImage2 head={`What Makes Our Original Cushions Special`} arrPhoto={arrayImageOfSliderMiddle} className="sliderM"/>
         </article>
 
         <section className="h-[500px] grid grid-cols-3 grid-rows-2">
@@ -96,7 +99,7 @@ export default function App() {
         </article>
 
         <article>
-          <SliderOfImage1 head={`Writings by the Walden Team`} arrPhoto={ArrayImageOfSliderFooter} />
+          <SliderOfImage1 head={`Writings by the Walden Team`} arrPhoto={arrayImageOfSliderFooter} className="sliderF"/>
         </article>
       </main>
 
