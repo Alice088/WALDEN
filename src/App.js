@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./components/UI/button";
 import SliderOfImage1 from "./components/sliders/SliderOfImage1";
 import SliderOfImage2 from "./components/sliders/sliderOfImage2";
 import arrayImageOfSliderTop from "./arrayImageOfSliderTop";
@@ -10,31 +11,32 @@ export default function App() {
   return (
     <div className="font-roboto">
 
-      <header className="h-[762px]"
-        style={{backgroundImage: `url(images/header-img.jpeg)`}}>
-        <nav>
-          <img src="images/icons/Logo-app.png" alt="Walden-icon" />
+    <header className="h-[100vh] bg-cover flex flex-col justify-between"
+      style={{ backgroundImage: `url(images/header-img.png)` }}>
 
-          <div>
-            <a href="#not-link-yet">Meditation Cushions</a>
-            <a href="#not-link-yet">The Gong</a>
-            <a href="#not-link-yet">Apparel</a>
-            <a href="#not-link-yet">ABOUT</a>
-            {/* потом каждому линку дать ссылку на айди для прокрутки!!!  */}
-            {/* в том смысле когда артикли буду, сейчас пока не надо */}
-
-            <img src="images/icons/circle-nav-icon.svg" alt="circle" />
-          </div>
+      <div className="flex justify-between p-7">
+        <img src="images/icons/Logo-App.svg" alt="Walden-icon" />
+        <nav className="flex gap-10 items-center [&_a]:uppercase [&_a]:text-white">
+          <a href="#cushions">Meditation Cushions</a>
+          <a href="#gong">The Gong</a>
+          <a href="#apparel">Apparel</a>
+          <a href="#about">ABOUT</a>
+          <img src="images/icons/circle-nav-icon.svg" alt="circle" />
         </nav>
-      </header>
+      </div>
+
+      <span className="self-center">
+        <Button text={`Shop Meditation Set`} />
+      </span>
+    </header>
  
       <main>
-        <article>
+        <article id="apparel">
           <SliderOfImage1
           head={`We believe everyone needs a space to be present, explore the mind, and find stillness. Walden designs and engineers tools for meditation.`} arrPhoto={arrayImageOfSliderTop}/>
         </article>
 
-      <article className="flex flex-col pl-8 pr-8">
+      <article className="flex flex-col pl-8 pr-8" id="gong">
           <div className=" h-[1000px] pt-16 bg-cover bg-center bg-no-repeat grid grid-rows-2"
             style={{ backgroundImage: `url(images/gong.png)` }}>
 
@@ -43,15 +45,11 @@ export default function App() {
               <p className=" text-center">An analogue meditation timer</p>
             </span>
 
-            <button className="text-white justify-self-center self-end m-12 p-3
-              border-solid w-fit rounded-full border-[1px] hover:bg-black/30">
-
-              Shop Meditation Cushions
-            </button>
+            <Button text={`Learn More`} />
           </div>
         </article>
 
-        <article>
+        <article id="cushions">
           <SliderOfImage2 head={`What Makes Our Original Cushions Special`} arrPhoto={arrayImageOfSliderMiddle} className="sliderM"/>
         </article>
 
@@ -90,11 +88,7 @@ export default function App() {
               Space for the self.
             </p>
 
-            <button className="text-white justify-self-center self-end m-12 p-3
-              border-solid w-fit rounded-full border-[1px] hover:bg-black/30">
-
-              Shop Meditation Cushions
-            </button>
+            <Button text={`Shop Meditation Cushions`} />
           </div>
         </article>
 
@@ -103,7 +97,7 @@ export default function App() {
         </article>
       </main>
 
-      <footer className="m-0 mt-[139px]">
+      <footer className="m-0 mt-[139px]" id="about">
         <div className="flex flex-col mb-[103px] items-center gap-y-3 text-neutral-400">
           <p>Sign up for our newsletter</p>
 

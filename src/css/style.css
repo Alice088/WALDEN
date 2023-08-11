@@ -6,6 +6,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+body a {
+  transition: 150ms ease-in-out;
+}
+body a:hover {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .Container {
   display: flex;
   flex-direction: column;
