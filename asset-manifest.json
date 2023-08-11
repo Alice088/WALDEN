@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Walden-app/static/css/main.c9578727.css",
+    "main.js": "/Walden-app/static/js/main.8ca1fa57.js",
+    "index.html": "/Walden-app/index.html",
+    "main.c9578727.css.map": "/Walden-app/static/css/main.c9578727.css.map",
+    "main.8ca1fa57.js.map": "/Walden-app/static/js/main.8ca1fa57.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9578727.css",
+    "static/js/main.8ca1fa57.js"
+  ]
+}
